@@ -1,0 +1,10 @@
+@import "../../variables.scss";
+
+.wrapper {
+  flex-basis: 25%;
+  border-right: 1px solid $border-color;
+}
+
+ul {
+  list-style: none;
+}
