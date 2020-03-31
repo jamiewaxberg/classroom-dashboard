@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./SideNav.module.scss"
+import * as React from 'react';
+import * as styles from './SideNav.scss'
 
-const navLinks = [
+const navLinks : {id: number, text: string}[] = [
     {
         id: 1,
         text: 'Daily Bulletin'

@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./MainNav.module.scss"
+import * as React from 'react';
+import * as styles from './MainNav.scss';
 
 function MainNav() {
     return (

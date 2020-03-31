@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "postcss-normalize": "^8.0.1"
+    "postcss-normalize": "^8.0.1",
+    "typings-for-css-modules-loader": "^1.7.0"
   }
 }
