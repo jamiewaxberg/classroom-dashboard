@@ -1,5 +1,6 @@
 import * as React from 'react';
-import * as styles from './MainNav.scss';
+
+const styles = require('./MainNav.module.scss');
 
 function MainNav() {
     return (

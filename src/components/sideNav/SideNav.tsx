@@ -1,5 +1,6 @@
 import * as React from 'react';
-import * as styles from './SideNav.scss'
+
+const styles = require('./SideNav.module.scss');
 
 const navLinks : {id: number, text: string}[] = [
     {

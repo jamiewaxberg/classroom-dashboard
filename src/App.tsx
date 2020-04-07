@@ -1,8 +1,10 @@
 import * as React from 'react';
-import './App.scss';
-import * as styles from "./App.scss"
+import './App.module.scss';
 import MainNav from "./components/mainNav/MainNav";
 import SideNav from "./components/sideNav/SideNav";
+
+const styles = require('./App.module.scss');
+
 
 function App() {
   return (
