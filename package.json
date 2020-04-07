@@ -41,7 +41,10 @@
     ]
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
     "postcss-normalize": "^8.0.1",
+    "react-app-rewired": "^2.1.5",
+    "typed-scss-modules": "^1.2.0",
     "typings-for-css-modules-loader": "^1.7.0"
   }
 }
