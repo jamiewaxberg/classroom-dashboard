@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useState} from "react";
 
 const styles = require('./SideNav.module.scss');
 
@@ -22,9 +23,21 @@ const navLinks : {id: number, text: string}[] = [
 ]
 
 function SideNav() {
+    const [activeTab, setActiveTab] = useState(1);
+
+    function handleTabClick(id: number) {
+        setActiveTab(id);
+    }
+
     return (
         <ul className={styles.wrapper}>
-            {navLinks.map(navItem => <li key={navItem.id}>{navItem.text}</li>)}
+            {navLinks.map(navItem => <li
+                key={navItem.id}
+                className={activeTab === navItem.id ? `${styles.listItem} ${styles.active}` : styles.listItem}
+                onClick={() => handleTabClick(navItem.id)}
+            >
+                {navItem.text}
+            </li>)}
         </ul>
     );
 }

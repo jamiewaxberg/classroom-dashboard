@@ -5,3 +5,7 @@ $gray-mid: #ccc;
 
 // Form variables
 $border-color: $gray-mid;
+
+// Grid variables
+$top-nav-height: 5vh;
+$side-nav-height: calc(96vh - #{$top-nav-height});
