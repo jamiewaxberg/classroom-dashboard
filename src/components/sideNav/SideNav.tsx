@@ -3,7 +3,7 @@ import {useState} from "react";
 
 const styles = require('./SideNav.module.scss');
 
-const navLinks : {id: number, text: string}[] = [
+export const navLinks : {id: number, text: string}[] = [
     {
         id: 1,
         text: 'Daily Bulletin'
@@ -27,6 +27,8 @@ function SideNav() {
 
     function handleTabClick(id: number) {
         setActiveTab(id);
+
+        return id;
     }
 
     return (
