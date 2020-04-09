@@ -37,6 +37,7 @@ function SideNav() {
                 key={navItem.id}
                 className={activeTab === navItem.id ? `${styles.listItem} ${styles.active}` : styles.listItem}
                 onClick={() => handleTabClick(navItem.id)}
+                data-testid="tab"
             >
                 {navItem.text}
             </li>)}
