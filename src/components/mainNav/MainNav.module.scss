@@ -7,9 +7,27 @@
   padding: 1em 2em;
   height: $top-nav-height;
   border-bottom: 1px solid $border-color;
+  color: $black;
+}
+
+.rightSection {
+  position: relative;
+  padding-right: 1.3em;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $black;
+    position: absolute;
+    top: 20px;
+    left: 48px;
+  }
 }
 
 .icon {
   height: 3em;
   width: 3em;
+  fill: $black;
 }
