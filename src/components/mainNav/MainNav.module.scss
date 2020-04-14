@@ -8,6 +8,7 @@
   height: $top-nav-height;
   border-bottom: 1px solid $border-color;
   color: $black;
+  position: relative;
 }
 
 .rightSection {
@@ -30,4 +31,33 @@
   height: 3em;
   width: 3em;
   fill: $black;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 9vh;
+  right: 10px;
+  max-width: 10em;
+  width: 100%;
+  border: 1px solid $gray-mid;
+
+  &.active {
+    display: block;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 1em;
+      border-bottom: 1px solid $gray-mid;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
 }
